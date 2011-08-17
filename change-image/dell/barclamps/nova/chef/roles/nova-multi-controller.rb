@@ -9,5 +9,6 @@ run_list(
          "recipe[nova::objectstore]",
          "recipe[nova::scheduler]",
          "recipe[nova::project]",
-         "recipe[nova::monitor]"
+         "recipe[nova::monitor]",
+         "recipe[nova::volume]"
          )
