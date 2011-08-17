@@ -36,7 +36,7 @@ EOH
   notifies :restart, resources(:service => "iscsitarget"), :immediately
 end
 
-execute "pvcreate /dev/sdb1 -ff"
+#execute "pvcreate /dev/sdb1 -ff"
 
-execute "vgcreate nova-volumes /dev/sdb1"
+#execute "vgcreate nova-volumes /dev/sdb1"
 
