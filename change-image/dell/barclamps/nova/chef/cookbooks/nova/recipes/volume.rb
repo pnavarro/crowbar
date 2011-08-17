@@ -35,3 +35,8 @@ EOH
   mode 0644
   notifies :restart, resources(:service => "iscsitarget"), :immediately
 end
+
+execute "pvcreate /dev/sdb1 -ff"
+
+execute "vgcreate nova-volumes /dev/sdb1"
+
